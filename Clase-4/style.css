@@ -1,0 +1,20 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.nombre { color: #ff5733; }       /* Color para tu nombre */
+.diseñadora { color: #3498db; }    /* Color para "diseñadora" */
+.creatividad { color: #2ecc71; }   /* Color para "creatividad" */
+.tecnologia { color: #f39c12; }    /* Color para "tecnología" */
