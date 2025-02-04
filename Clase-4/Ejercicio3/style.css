@@ -1,0 +1,23 @@
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 32px;
+}
+
+.info {
+    font-family: Arial, sans-serif;
+    color: gray;
+}
+
+.autor {
+    color: skyblue;
+    text-decoration: none;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+.italica {
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+}
