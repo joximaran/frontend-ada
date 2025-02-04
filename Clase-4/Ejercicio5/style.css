@@ -1,0 +1,18 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.alinear-izquierda {
+    text-align: left;
+    font-weight: 700;
+}
+
+.alinear-centro {
+    text-align: center;
+    font-weight: 700;
+}
+
+.alinear-derecha {
+    text-align: right;
+    font-weight: 700;
+}

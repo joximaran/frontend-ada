@@ -1,0 +1,24 @@
+.lista-frutas {
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-weight: 700; 
+    padding: 10px 10px 0 0;
+}
+
+.lista-frutas li {
+    margin: 5px;
+}
+
+.manzana { color: #ee0404; }
+.platano { color: #e6b800; } 
+.kiwi { color: rgb(104, 65, 23); }
+.naranja { color: rgb(243, 137, 0); }
+.uva { color: purple; }
+.sandia { color: rgb(224, 2, 135); }
+.cereza { color: rgb(173, 11, 44); }
+.pera { color: rgb(234, 234, 35); }
+.frutilla { color: rgb(255, 20, 20); }
+.mango { color: rgb(249, 138, 4); }
+
