@@ -1,0 +1,24 @@
+body {
+    background-color: #212121; /* Fondo oscuro */
+    color: #FAFAFA;            /* Texto claro */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 120px;
+    font-weight: 900;
+  }
+  
+  p {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  /* Colores personalizados para cada parte */
+  .nombre { color: #ff5733; }       /* Color para el nombre */
+  .programadora { color: #3498db; }   /* Color para "programadora" */
+  .matematicas { color: #2ecc71; }    /* Color para "matemáticas" */
+  .guitarra { color: #f39c12; }       /* Color para "guitarra" */
+  
