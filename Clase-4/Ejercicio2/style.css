@@ -16,9 +16,8 @@ body {
     font-weight: 700;
   }
   
-  /* Colores personalizados para cada parte */
-  .nombre { color: #ff5733; }       /* Color para el nombre */
-  .programadora { color: #3498db; }   /* Color para "programadora" */
-  .matematicas { color: #2ecc71; }    /* Color para "matemáticas" */
-  .guitarra { color: #f39c12; }       /* Color para "guitarra" */
+  .nombre { color: #ff5733; }      
+  .disenadora { color: #3498db; }  
+  .frontend { color: #2ecc71; }    
+  .cafe{ color: #f39c12; }       
   
