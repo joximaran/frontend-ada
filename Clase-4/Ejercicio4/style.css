@@ -1,0 +1,56 @@
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.info {
+    font-family: Arial, sans-serif;
+    color: gray;
+}
+
+.autor {
+    color: skyblue;
+    text-decoration: none;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+.texto-italica {
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+}
+
+.div-emoji {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+.emojis {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -5px;
+}
+
+.arbol-grande {
+    font-size: 50px;
+}
+
+
+.arbol-mediano {
+    font-size: 40px;
+}
+
+.edificio-chico {
+    font-size: 30px;
+}
