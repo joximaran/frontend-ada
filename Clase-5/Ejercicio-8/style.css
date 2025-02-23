@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.temperatura0 {
+    color: blue;
+}
+
+.temperatura5 {
+    color: #4d78b0;
+}
+
+.temperatura10 {
+    color: #6699cc;
+}
+
+.temperatura15 {
+    color: #80b3e6;
+}
+
+.temperatura20 {
+    color: #99ccff;
+}
+
+.temperatura25 {
+    color: #b3d9ff;
+}
+
+.temperatura30 {
+    color: #cce5ff;
+}
+
+.temperatura35 {
+    color: #e6f2ff;
+}
+
+.temperatura40 {
+    color: #ffcccc;
+}
+
+.temperatura50 {
+    color: red;
+}
