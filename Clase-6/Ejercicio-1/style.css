@@ -4,7 +4,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-image: url('fondo-degradado.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
 }
 
@@ -19,7 +21,8 @@ body {
   background-color: white;
   border-radius: 8px;
   padding: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra suave con degradado de cian a rojo */
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3), 0 8px 20px rgba(255, 0, 0, 0.3);
   text-align: center;
   max-width: 400px;
   width: 100%;
@@ -47,7 +50,7 @@ p {
 }
 
 .login-button, .signup-button {
-  background-color: #007bff;
+  background: linear-gradient(to right, #1e90ff, #87ceeb);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -55,8 +58,11 @@ p {
   text-decoration: none;
   font-weight: bold;
   margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
 }
 
 .login-button:hover, .signup-button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(to right, #187bcd, #7ac9e6);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
