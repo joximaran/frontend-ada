@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+}
+
+.paisaje {
+    margin-top: 50px;
+}
+
+.emoji {
+    display: inline-block;
+    margin: 5px;
+}
+
+.pequeño {
+    font-size: 30px;
+}
+
+.mediano {
+    font-size: 45px;
+}
+
+.grande {
+    font-size: 60px;
+}
+
+.gigante {
+    font-size: 75px;
+}
