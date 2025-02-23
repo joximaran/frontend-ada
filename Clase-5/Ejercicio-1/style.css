@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 900;
+    color: #ff5733;
+}
+
+p {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+span {
+    display: inline;
+}
+
+.nombre {
+    color: #3498db;
+}
+
+.estudiante {
+    color: #27ae60;
+}
+
+.diseñadora {
+    color: #f1c40f;
+}
+
+.ilustradora {
+    color: #9b59b6;
+}
