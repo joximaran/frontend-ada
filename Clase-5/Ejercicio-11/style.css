@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title */
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    color: #00796b;
+    margin-bottom: 40px;
+}
+
+/* Comments Section */
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.comentario {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comentario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.comentario h3 {
+    font-size: 26px;
+    color: #004d40;
+    margin-bottom: 8px;
+}
+
+.usuario {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+}
+
+.usuario:hover {
+    color: #004d40;
+}
+
+.fecha {
+    font-size: 13px;
+    color: #b0bec5;
+    margin-bottom: 15px;
+}
+
+.contenido {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Reactions */
+.reacciones {
+    display: flex;
+    gap: 15px;
+}
+
+.reaccion {
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.reaccion:hover {
+    background-color: #004d40;
+}
+
+.reaccion span {
+    padding: 5px;
+}
+
+/* Customizing individual colors for reactions */
+.reaccion:nth-child(1) {
+    background-color: #ff6b6b;
+}
+
+.reaccion:nth-child(2) {
+    background-color: #ffb142;
+}
+
+.reaccion:nth-child(3) {
+    background-color: #4ecdc4;
+}
+
+.reaccion:nth-child(4) {
+    background-color: #f25f5c;
+}
