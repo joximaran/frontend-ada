@@ -13,12 +13,13 @@ h1 {
     color: #222;
 }
 
-.autor {
+.subtitulo {
     color: #777;
     font-size: 18px;
+    font-family: 'Merriweather', serif;
 }
 
-.autor a {
+.subtitulo a {
     color: #3498db;
     text-decoration: none;
 }
