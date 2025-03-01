@@ -1,0 +1,172 @@
+/* Estilos generales */
+h2 {
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* Bandera plana */
+.flat-flag {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+.flat-flag .blue {
+    flex-grow: 1;
+    background-color: lightblue;
+}
+.flat-flag .white {
+    flex-grow: 1;
+    background-color: white;
+}
+
+/* Bandera con efecto ondulado */
+.wavy-flag {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.wavy-flag .blue, .wavy-flag .white {
+    position: absolute;
+    width: 100%;
+    height: 33.33%;
+}
+.wavy-flag .blue {
+    background-color: lightblue;
+    top: 0;
+}
+.wavy-flag .white {
+    background-color: white;
+    top: 33.33%;
+}
+.wavy-flag .blue:last-child {
+    top: 66.66%;
+}
+.wavy-flag::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 50%, rgba(0,0,0,0.1) 50%);
+    z-index: 2;
+}
+
+/* Bandera redonda con efecto 3D y brillo */
+.round-flag {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.round-flag .blue, .round-flag .white {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+.round-flag .blue {
+    background-color: lightblue;
+    top: 0;
+}
+.round-flag .white {
+    background-color: white;
+    top: 50%;
+}
+.round-flag::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 50%);
+    z-index: 2;
+}
+
+/* Bandera en forma de corazón */
+.heart-flag {
+    width: 200px;
+    height: 180px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+.heart-flag::before, .heart-flag::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 160px;
+    background: lightblue;
+    border-radius: 50px 50px 0 0;
+}
+.heart-flag::before {
+    left: 100px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart-flag::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+.heart-flag .white {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: white;
+    top: 60px;
+    left: 70px;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+/* Bandera redonda plana */
+.flat-circle-flag {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.flat-circle-flag .blue, .flat-circle-flag .white {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+.flat-circle-flag .blue {
+    background-color: lightblue;
+    top: 0;
+}
+.flat-circle-flag .white {
+    background-color: white;
+    top: 50%;
+}
+
+/* Bandera con efecto de tela y sombra */
+.fabric-flag {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background: repeating-linear-gradient(
+        45deg,
+        lightblue,
+        lightblue 10px,
+        white 10px,
+        white 20px
+    );
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.fabric-flag::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%);
+}
