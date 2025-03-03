@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 400px; /* Ancho más considerable */
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: stretch; /* Asegura que la barra ocupe toda la altura */
+    margin-bottom: 16px; /* Espacio entre tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 0; /* Padding arriba y abajo */
+    position: relative; /* Necesario para la línea de color */
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-line {
+    width: 6px; /* Grosor de la línea */
+    background-color: var(--line-color);
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.course-content {
+    padding: 10px 16px; /* Padding interno */
+    margin-left: 16px; /* Espacio entre la barra y el contenido */
+    flex-grow: 1; /* Ocupa el espacio restante */
+}
+
+.course-title {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+.course-count {
+    font-size: 1em;
+    color: #777;
+    margin: 0;
+}
