@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de Suscripción</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Iconos de FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas - Estilo Windows 98</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="subscription-card">
-        <!-- Ícono -->
-        <div class="icon">
-            <i class="fas fa-rocket"></i>
-        </div>
-        <!-- Título -->
-        <h2 class="title">Plan Pro</h2>
-        <!-- Precio -->
-        <p class="price">$10 <span class="price-period">/mes</span></p>
-        <!-- Lista de características -->
-        <ul class="features">
-            <li><i class="fas fa-check"></i> Acceso a todas las funciones</li>
-            <li><i class="fas fa-check"></i> Soporte prioritario</li>
-            <li><i class="fas fa-check"></i> Actualizaciones gratuitas</li>
-            <li><i class="fas fa-check"></i> Almacenamiento extra</li>
-        </ul>
-        <!-- Botón de suscripción -->
-        <button class="subscribe-button">Suscribirse</button>
+  <div class="container">
+    <h1>Lista de Tareas</h1>
+    <div class="task-list">
+      <!-- Tareas existentes -->
+      <div class="task-card">
+        <input type="checkbox" id="task1">
+        <label for="task1">Diseño web tareas completadas</label>
+        <button class="delete-btn">Borrar</button>
+      </div>
+      <div class="task-card">
+        <input type="checkbox" id="task2">
+        <label for="task2">Inbox de email</label>
+        <button class="delete-btn">Borrar</button>
+      </div>
+      <div class="task-card">
+        <input type="checkbox" id="task3">
+        <label for="task3">Requerimientos para cliente de diseño web</label>
+        <button class="delete-btn">Borrar</button>
+      </div>
+      <div class="task-card">
+        <input type="checkbox" id="task4">
+        <label for="task4">Comenzar diseño web para mockup</label>
+        <button class="delete-btn">Borrar</button>
+      </div>
     </div>
+
+    <!-- Formulario para agregar nueva tarea -->
+    <div class="add-task">
+      <input type="text" id="new-task" placeholder="Agregar nueva tarjeta">
+      <button id="add-btn">Agregar</button>
+    </div>
+  </div>
 </body>
 </html>
