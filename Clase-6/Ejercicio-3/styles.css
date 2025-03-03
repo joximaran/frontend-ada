@@ -1,0 +1,148 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.bandera {
+  width: 200px;
+  height: 120px;
+  margin: 20px auto;
+  position: relative;
+}
+
+/* Bandera Flat */
+.argentina-flat {
+  background: linear-gradient(to bottom, #74ACDF 33%, white 33%, white 66%, #74ACDF 66%);
+  
+}
+
+.argentina-flat::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: gold;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Bandera 3D */
+.argentina-3d {
+  background: linear-gradient(to bottom, #74ACDF 33%, white 33%, white 66%, #74ACDF 66%);
+  border-radius: 10px;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.3),
+              inset 5px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.argentina-3d::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: gold;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Bandera Corazón */
+.argentina-corazon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom, #74ACDF 33%, white 33%, white 66%, #74ACDF 66%);
+  position: relative;
+  clip-path: polygon(50% 95%, 5% 35%, 20% 10%, 50% 25%, 80% 10%, 95% 35%); 
+  border-radius: 60% 60% 10% 10%; 
+}
+
+.argentina-corazon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: gold;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.argentina-ondulante {
+  width: 220px;
+  height: 120px;
+  background: linear-gradient(to bottom, #74ACDF 35%, white 35%, white 65%, #74ACDF 65%); /* Ajuste de franjas */
+  clip-path: path("M0 20 C 30 0, 70 40, 100 20 S 170 0, 220 20 L 220 100 C 190 120, 150 80, 120 100 S 50 120, 0 100 Z");
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.argentina-ondulante::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: gold;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Bandera Botón */
+.argentina-boton {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(to bottom, #74ACDF 33%, white 33%, white 66%, #74ACDF 66%);
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.3),
+              inset 5px 5px 10px rgba(255, 255, 255, 0.3),
+              2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.argentina-boton::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: gold;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bandera {
+  width: 200px;
+  height: 120px;
+  margin: 20px auto;
+  position: relative;
+}
+
+/* Bandera Flat sombra*/
+.argentina-flat-sombra {
+  background: linear-gradient(to bottom, #74ACDF 33%, white 33%, white 66%, #74ACDF 66%);
+  box-shadow: 
+      5px 5px 10px rgba(0, 0, 0, 0.3), /* Sombra detrás */
+      -5px -5px 10px rgba(255, 255, 255, 0.3); /* Sombra delante */
+}
+
+.argentina-flat-sombra::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: gold;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
