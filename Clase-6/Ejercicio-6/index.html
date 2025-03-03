@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget de Donación</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="widget-container">
+        <div class="donation-card">
+            <!-- Ícono -->
+            <div class="icon">
+                <i class="fas fa-gift"></i>
+            </div>
+            <!-- Título -->
+            <h2 class="title">Donar</h2>
+            <!-- Descripción -->
+            <p class="description">
+                Ayuda a mantener este proyecto y contribuye con una donación.
+            </p>
+            <!-- Opciones de donación -->
+            <div class="donation-options">
+                <button class="donation-option">$5</button>
+                <button class="donation-option">$10</button>
+                <button class="donation-option">$20</button>
+            </div>
+            <!-- Campo de entrada para otro monto -->
+            <div class="input-group">
+                <span class="currency">$</span>
+                <input type="number" class="amount-input" placeholder="Otro monto" min="0">
+            </div>
+            <!-- Botón de donación -->
+            <button class="donate-button">Donar ahora</button>
+        </div>
+    </div>
+</body>
+</html>

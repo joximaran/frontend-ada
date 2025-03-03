@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333; /* Texto oscuro */
+}
+
+/* Contenedor del widget */
+.widget-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Tarjeta de donación */
+.donation-card {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+}
+
+/* Ícono */
+.icon {
+    font-size: 48px;
+    color: #8a2be2; /* Color violeta */
+    margin-bottom: 20px;
+}
+
+/* Título */
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Texto oscuro */
+}
+
+/* Descripción */
+.description {
+    font-size: 14px;
+    color: #666; /* Texto gris */
+    margin-bottom: 20px;
+}
+
+/* Opciones de donación */
+.donation-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.donation-option {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333; /* Texto oscuro */
+    border: 2px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.donation-option:hover {
+    background-color: #e0e0e0; /* Fondo gris al pasar el mouse */
+    border-color: #8a2be2; /* Borde violeta al pasar el mouse */
+}
+
+/* Grupo de entrada (otro monto) */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.currency {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333; /* Texto oscuro */
+}
+
+.amount-input {
+    width: 100px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 6px;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+    text-align: center;
+    outline: none;
+}
+
+.amount-input::placeholder {
+    color: #999; /* Texto gris para el placeholder */
+}
+
+.amount-input:focus {
+    border-color: #8a2be2; /* Borde violeta al enfocar */
+}
+
+/* Botón de donación */
+.donate-button {
+    background-color: #8a2be2; /* Color violeta */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.donate-button:hover {
+    background-color: #7b1fa2; /* Violeta más oscuro al pasar el mouse */
+}
