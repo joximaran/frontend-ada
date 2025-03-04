@@ -45,15 +45,16 @@ p {
 .icono-servicio {
     width: 48px;
     height: 48px;
-    font-size: 22px;
-    color: white;
     background-color: #6875f5;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative; /* Posicionamiento relativo para el contenedor */
 }
 
-.icono-servicio i {
-    margin: 2px 0 0 0; /* Ajuste del margen superior */
+.icono-servicio-contenido {
+    position: absolute; /* Posicionamiento absoluto para el icono */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    font-size: 22px;
+    color: white;
 }
