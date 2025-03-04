@@ -1,0 +1,92 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dado {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.fila {
+    width: 100%;
+    display: flex;
+}
+
+.punto {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* DADO 1 */
+
+.dado-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+/* DADO 2 */
+
+.dado-2 .fila:nth-child(1) {
+    justify-content: flex-start;
+}
+
+.dado-2 .fila:nth-child(2) {
+    justify-content: flex-end;
+}
+
+/* DADO 3 */
+
+.dado-3 .fila:nth-child(1) {
+    justify-content: flex-end;
+}
+
+.dado-3 .fila:nth-child(2) {
+    justify-content: center;
+}
+
+/* DADO 4 */
+
+.dado-4 .fila {
+    justify-content: space-between;
+}
+
+/* DADO 5 */
+
+.dado-5 .fila:nth-child(1),
+.dado-5 .fila:nth-child(3) {
+    justify-content: space-between;
+}
+
+.dado-5 .fila:nth-child(2) {
+    justify-content: center;
+}
+
+/* DADO 6 */
+
+.dado-6 .fila {
+    justify-content: space-between;
+}

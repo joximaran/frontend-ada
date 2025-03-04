@@ -23,7 +23,7 @@ body {
     align-items: center;
 }
 
-.profile-thumbnail {
+.miniatura-perfil {
     width: 50px;
     height: 50px;
     border-radius: 4px;
@@ -33,17 +33,17 @@ body {
     margin-left: 10px;
 }
 
-.username,
-.handle {
+.nombre-usuario,
+.manejador {
     margin: 0;
 }
 
-.tweet-content {
+.contenido-tweet {
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.divider {
+.separador {
     margin: 20px 0;
     border-style: solid;
     opacity: 0.1;
@@ -59,7 +59,7 @@ body {
     display: flex;
 }
 
-.stat-number {
+.numero-estadistica {
     font-size: 18px;
 }
 
@@ -67,7 +67,7 @@ body {
     margin-left: 10px;
 }
 
-.action {
+.accion {
     text-decoration: none;
     color: black;
     margin-left: 15px;
