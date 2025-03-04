@@ -1,21 +1,30 @@
-.argentina-ondulante {
-  width: 220px;
-  height: 120px;
-  background: linear-gradient(to bottom, #74ACDF 35%, white 35%, white 65%, #74ACDF 65%); /* Ajuste de franjas */
-  clip-path: path("M0 20 C 30 0, 70 40, 100 20 S 170 0, 220 20 L 220 100 C 190 120, 150 80, 120 100 S 50 120, 0 100 Z");
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+.heart {
   position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
 
-.argentina-ondulante::after {
+.heart::before,
+.heart::after {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: gold;
+  width: 100px;
+  height: 100px;
+  background-color: red;
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
 }
