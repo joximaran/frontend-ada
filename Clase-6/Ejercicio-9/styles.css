@@ -1,0 +1,97 @@
+body {
+    font-family: "Muli", sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    color: #8c8c8c;
+}
+
+.contenedor-principal {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.eventos-container {
+    width: 80%; 
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px; 
+}
+
+.header {
+    margin-bottom: 30px; 
+}
+
+.header-title {
+    font-weight: 900;
+    color: #343434;
+    font-size: 30px; 
+    vertical-align: inherit;
+    margin-bottom: 20px; 
+}
+
+.filtros {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.filtro-boton {
+    background-color: transparent;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px; 
+    font-weight: 500;
+}
+
+.filtro-boton.activo {
+    background-color: #343434;
+    ;
+    color: #fff;
+    border-radius:5px;
+}
+
+.evento {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0; 
+}
+
+.evento.cancelado {
+    background-color: #f9f9f9;
+}
+
+.estado {
+    color: #EE6B89;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.data {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px; 
+    color:#343434;
+}
+
+p {
+    margin-bottom: 15px; 
+    font-size: 14px; 
+    line-height: 1.6; 
+    color: #8c8c8c;
+}
+
+.ver-mas {
+    color: #911A8B;
+    text-decoration: none;
+    font-size: 14px; 
+}
