@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    font-family: "Open Sans", sans-serif;
+}
+
+.titulo-tabla { /* Cambiado el selector */
+    color: #ffffff;
+    margin-bottom: 0;
+    text-align: center; /* Centrar el título */
+    text-shadow: 1px 1px 0 #000;
+}
+
+.descripcion-tabla { /* Cambiado el selector */
+    color: #ffffff;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-shadow: 1px 1px 0 #000;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 85.375rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+.seccion-precios {
+    color: #ffffff;
+}
+
+.precios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 1.875rem;
+    width: 100%;
+}
+
+.item-precio {
+    align-items: stretch;
+    display: flex;
+    flex: 0 1 20.625rem;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+.lista-caracteristicas {
+    text-align: left;
+}
+
+.boton-accion {
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+.boton-accion:focus {
+    outline: none;
+}
+
+.tema-precios .item-precio {
+    background: rgba(255, 255, 255, 0.08);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.625rem;
+    color: #ffffff;
+    cursor: default;
+    margin-bottom: 1.25rem;
+    margin: 1.25rem;
+}
+
+.tema-precios .item-precio:hover {
+    border: 0.0625rem solid white;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.tema-precios .titulo-precio {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.tema-precios .precio {
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 1.125rem 0 0 0;
+    position: relative;
+    z-index: 100;
+}
+
+.tema-precios .moneda {
+    font-size: 1.625rem;
+    vertical-align: super;
+}
+
+.tema-precios .frase-precio {
+    margin: 0 auto;
+    padding: 0.875rem 1.25rem;
+    font-size: 1rem;
+}
+
+.tema-precios .lista-caracteristicas {
+    font-size: 1.25rem;
+    list-style: none;
+    margin: 0 1.875rem;
+    padding: 1.875rem 0;
+}
+
+.tema-precios .caracteristica {
+    line-height: 1.4;
+}
+
+.tema-precios .caracteristica:before {
+    content: "\2713";
+    display: inline-block;
+    padding: 0 0.875rem 0 0;
+    vertical-align: middle;
+}
+
+.tema-precios .boton-accion {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0.3125rem;
+    color: #21759b;
+    flex: none;
+    font-weight: 700;
+    margin: auto 1.25rem 1.25rem;
+    padding: 1rem 1.25rem;
+}
