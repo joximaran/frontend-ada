@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #D0C9F3;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+}
+
+.card {
+    background-color: #1A1832;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 20px; 
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rating-section {
+    background-color: #282547;  
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+}
+
+.question {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.star.filled {
+    color: #ffc107;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.return-btn {
+    background: linear-gradient(to bottom right, #672CB9 50%, #6317AE 50%);
+}
