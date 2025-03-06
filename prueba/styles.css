@@ -1,30 +1,74 @@
-.heart {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 50px;
-  left: 50px;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #add8e6; /* Un fondo celeste claro, similar a la bandera */
 }
 
-.heart::before,
-.heart::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  border-radius: 50%;
+h1 {
+  font-family: sans-serif;
+  color: #005bac; /* Azul oscuro, similar a la bandera */
+  margin-bottom: 20px;
 }
 
-.heart::before {
-  top: -50px;
-  left: 0;
+.detailed-heart-flag {
+  width: 200px; /* Ancho del contenedor */
+  height: auto; /* La altura se ajusta automáticamente */
 }
 
-.heart::after {
-  left: 50px;
-  top: 0;
+.detailed-heart-flag svg {
+  width: 100%; /* El SVG ocupa todo el ancho del contenedor */
+  height: 100%; /* El SVG ocupa toda la altura del contenedor */
+}
+
+.st0 {
+  clip-path: url(#clippath-7);
+}
+.st1 {
+  fill: #f1bd51;
+}
+.st2 {
+  clip-path: url(#clippath-4);
+}
+.st3 {
+  fill: #7a361d;
+}
+.st4 {
+  fill: #fff;
+}
+.st5 {
+  fill: none;
+}
+.st6 {
+  opacity: .8;
+}
+.st6, .st7 {
+  mix-blend-mode: multiply;
+}
+.st8 {
+  isolation: isolate;
+}
+.st9 {
+  clip-path: url(#clippath-3);
+}
+.st10 {
+  fill: #80a7d8;
+}
+.st11 {
+  fill: url(#linear-gradient2);
+}
+.st11, .st12 {
+  mix-blend-mode: color-dodge;
+}
+.st13 {
+  fill: url(#linear-gradient);
+}
+.st14 {
+  clip-path: url(#clippath);
+}
+.st12 {
+  fill: url(#linear-gradient1);
 }

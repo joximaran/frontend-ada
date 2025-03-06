@@ -1,0 +1,35 @@
+body {
+    color: white;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8534; /* Color de fondo inicial */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Puntos de interrupción */
+@media (max-width: 900px) and (min-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+    body {
+        background-color: #fd2e95; /* Color de fondo para pantallas medianas */
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    body {
+        background-color: #2fc7ff; /* Color de fondo para pantallas pequeñas */
+    }
+}
