@@ -10,7 +10,7 @@ body {
   position: relative;
 }
 
-/* Bandera Flat */
+
 .argentina-flat {
   background: linear-gradient(to bottom, #74ACDF 33%, white 33%, white 66%, #74ACDF 66%);
   
@@ -29,7 +29,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Bandera 3D */
+
 .argentina-3d {
   background: linear-gradient(to bottom, #74ACDF 33%, white 33%, white 66%, #74ACDF 66%);
   border-radius: 10px;
@@ -50,7 +50,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Bandera Corazón */
 .argentina-corazon {
   width: 100px;
   height: 100px;
@@ -95,7 +94,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Bandera Botón */
 .argentina-boton {
   width: 120px;
   height: 120px;
@@ -126,12 +124,12 @@ body {
   position: relative;
 }
 
-/* Bandera Flat sombra*/
+
 .argentina-flat-sombra {
   background: linear-gradient(to bottom, #74ACDF 33%, white 33%, white 66%, #74ACDF 66%);
   box-shadow: 
-      5px 5px 10px rgba(0, 0, 0, 0.3), /* Sombra detrás */
-      -5px -5px 10px rgba(255, 255, 255, 0.3); /* Sombra delante */
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      -5px -5px 10px rgba(255, 255, 255, 0.3); 
 }
 
 .argentina-flat-sombra::after {

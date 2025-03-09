@@ -1,14 +1,14 @@
 .progress-bar {
     width: 500px;
     height: 30px;
-    background-color: #eee; /* Color de fondo */
+    background-color: #eee;
     border-radius: 100px;
     padding: 3px;
-    margin: 10px auto; /* Centrar las barras */
+    margin: 10px auto; 
 }
 
 .progress {
     height: 100%;
-    background-color: #4CAF50; /* Color de progreso */
+    background-color: #4CAF50; 
     border-radius: 100px;
 }

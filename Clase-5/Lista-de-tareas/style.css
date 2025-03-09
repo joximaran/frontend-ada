@@ -1,4 +1,4 @@
-/* Estructura general */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -13,7 +13,7 @@ body {
     padding: 20px;
 }
 
-/* Estilos de los encabezados */
+
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -32,7 +32,7 @@ h2 {
     font-weight: lighter;
 }
 
-/* Estilo de las tareas */
+
 .tareas-lista {
     display: flex;
     flex-direction: column;
@@ -62,23 +62,21 @@ h2 {
     display: inline-block;
 }
 
-/* Colores por estado */
 .pendiente .estado {
-    background-color: #db3434; /* Azul */
+    background-color: #db3434; 
     color: white;
 }
 
 .haciendo .estado {
-    background-color: #f39c12; /* Naranja */
+    background-color: #f39c12; 
     color: white;
 }
 
 .hecha .estado {
-    background-color: #2ecc71; /* Verde */
+    background-color: #2ecc71; 
     color: white;
 }
 
-/* Efectos hover para las tareas */
 .tarea:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);

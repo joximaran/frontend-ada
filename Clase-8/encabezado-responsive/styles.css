@@ -5,7 +5,7 @@ body {
 
 header {
     background-color: #f0f0f0;
-    height: 60px; /* Aumentamos la altura para mejor visualización */
+    height: 60px; 
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -28,13 +28,13 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
-    font-weight: bold; /* Enlaces en negrita */
-    padding: 10px 15px; /* Padding para el hover */
-    transition: color 0.3s ease; /* Transición suave para el color */
+    font-weight: bold; 
+    padding: 10px 15px; 
+    transition: color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Color al hacer hover */
+    color: #007bff; 
 }
 
 .menu-icon {

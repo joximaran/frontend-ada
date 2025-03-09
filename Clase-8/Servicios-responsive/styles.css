@@ -48,36 +48,36 @@ p {
     background-color: #6875f5;
     border-radius: 5px;
     position: relative;
-    /* Posicionamiento relativo para el contenedor */
+    
 }
 
 .icono-servicio-contenido {
     position: absolute;
-    /* Posicionamiento absoluto para el icono */
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Centrado perfecto */
+  
     font-size: 22px;
     color: white;
 }
 
-/* Punto de interrupción para móviles */
+
 @media (max-width: 768px) {
     .servicios {
         flex-direction: column;
         align-items: center;
-        /* Centrar los elementos horizontalmente */
+        
     }
 
     .servicio {
         width: 100%;
         text-align: center;
-        /* Centrar el texto dentro de cada servicio */
+       
     }
 
     .icono-servicio {
         margin: 0 auto;
-        /* Centrar el icono horizontalmente */
+        
     }
 }

@@ -9,7 +9,7 @@ body {
 }
 
 .card {
-    width: 400px; /* Ancho más considerable */
+    width: 400px; 
 }
 
 .course-card {
@@ -17,12 +17,12 @@ body {
     border: 1px solid #e0e0e0;
     border-radius: 0 4px 4px 0;
     display: flex;
-    align-items: stretch; /* Asegura que la barra ocupe toda la altura */
-    margin-bottom: 16px; /* Espacio entre tarjetas */
+    align-items: stretch; 
+    margin-bottom: 16px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 10px 0; /* Padding arriba y abajo */
-    position: relative; /* Necesario para la línea de color */
+    padding: 10px 0; 
+    position: relative; 
 }
 
 .course-card:hover {
@@ -31,18 +31,18 @@ body {
 }
 
 .course-line {
-    width: 6px; /* Grosor de la línea */
+    width: 6px; 
     background-color: var(--line-color);
-    position: absolute; /* Posicionamiento absoluto */
+    position: absolute; 
     top: 0;
     bottom: 0;
     left: 0;
 }
 
 .course-content {
-    padding: 10px 16px; /* Padding interno */
-    margin-left: 16px; /* Espacio entre la barra y el contenido */
-    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 10px 16px; 
+    margin-left: 16px; 
+    flex-grow: 1; 
 }
 
 .course-title {
