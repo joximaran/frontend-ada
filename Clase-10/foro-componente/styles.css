@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #fff2f6, #ebdadf); /* Fondo degradado */
+    font-family: 'Poppins', sans-serif; 
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ajusta el ancho según sea necesario */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+input[type="text"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eff4fd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+select {
+    appearance: none; 
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Agrega una flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px; 
+}
+
+textarea {
+    resize: vertical; 
+    min-height: 100px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.select-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-container select {
+    width: 48%; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif; 
+}
+
+button.create {
+    background-color: #ec3168; 
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.button.cancel {
+    background-color: #eff4fd;
+    font-family: 'Poppins', sans-serif; 
+}
