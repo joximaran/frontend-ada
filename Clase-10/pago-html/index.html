@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pago</title>
+</head>
+<body>
+
+  <h2>Pago</h2>
+
+  <form>
+    <div>
+      <label for="numeroTarjeta">Número de Tarjeta de Crédito:</label>
+      <input type="text" id="numeroTarjeta" name="numeroTarjeta">
+    </div>
+
+    <div>
+      <label for="nombreTitular">Nombre Completo del Titular:</label>
+      <input type="text" id="nombreTitular" name="nombreTitular">
+    </div>
+
+    <div>
+      <label for="mesExpiracion">Mes de Expiración:</label>
+      <select id="mesExpiracion" name="mesExpiracion">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="anioExpiracion">Año de Expiración:</label>
+      <input type="number" id="anioExpiracion" name="anioExpiracion" min="2024" max="2034">
+    </div>
+
+    <div>
+      <label for="ccv">CCV (Código de Seguridad):</label>
+      <input type="password" id="ccv" name="ccv">
+    </div>
+
+    <div>
+      <button type="submit">Pagar</button>
+    </div>
+  </form>
+
+</body>
+</html>
