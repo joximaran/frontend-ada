@@ -1,0 +1,83 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2,
+h3 {
+    color: #161e2e;
+}
+
+p {
+    color: #6b7280;
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.titulo-seccion {
+    font-size: 42px;
+    margin: 0;
+}
+
+.servicios {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 1000px;
+}
+
+.servicio {
+    width: 50%;
+    padding: 10px;
+}
+
+.icono-servicio {
+    width: 48px;
+    height: 48px;
+    background-color: #6875f5;
+    border-radius: 5px;
+    position: relative;
+    /* Posicionamiento relativo para el contenedor */
+}
+
+.icono-servicio-contenido {
+    position: absolute;
+    /* Posicionamiento absoluto para el icono */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centrado perfecto */
+    font-size: 22px;
+    color: white;
+}
+
+/* Punto de interrupción para móviles */
+@media (max-width: 768px) {
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+        /* Centrar los elementos horizontalmente */
+    }
+
+    .servicio {
+        width: 100%;
+        text-align: center;
+        /* Centrar el texto dentro de cada servicio */
+    }
+
+    .icono-servicio {
+        margin: 0 auto;
+        /* Centrar el icono horizontalmente */
+    }
+}
