@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+#booking {
+    position: relative;
+    height: 100vh;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(47, 103, 177, 0.6);
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-md-4 {
+    width: 40%;
+    background-color: #fff;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.col-md-7 {
+    width: 50%;
+    text-align: left; 
+    padding-left: 50px; 
+}
+
+.booking-cta h1 {
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.booking-cta p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.booking-form .form-group {
+    margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+    background-color: #ebecee;
+    border-radius: 4px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #3e485c;
+    box-sizing: border-box;
+}
+
+.booking-form .form-control::placeholder {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    pointer-events: none;
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-label {
+    display: block;
+    color: #3e485c;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.booking-form .submit-btn {
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #1e62d8;
+    font-weight: 700;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover {
+    opacity: 0.9;
+}
