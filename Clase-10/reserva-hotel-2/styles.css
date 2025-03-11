@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: url('img/background.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -11,11 +13,11 @@ body {
 
 .booking-container {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 80%;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .booking-form {
@@ -28,38 +30,84 @@ body {
 .input-group {
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-right: 15px;
+    flex: 1;
+}
+
+.input-group:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+    background: #ddd;
 }
 
 label {
     font-size: 14px;
-    color: #333;
+    color: #ff0063;
     margin-bottom: 5px;
+    padding: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 input, select {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    outline: none;
+    color: #757575;
+}
+
+.input-wrapper i {
+    position: absolute;
+    right: 10px;
+    color: #757575;
+    font-size: 20px;
+}
+
+.input-group .date-icon {
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    color: #222;
+    font-size: 20px;
+}
+
+.ddmmaa {
+    color: #222;
 }
 
 .form-btn {
     display: flex;
-    align-items: inherit;
+    align-items: center;
 }
 
 .submit-btn {
     background: #ff0063;
     border: none;
     color: #fff;
-    padding: 15px 20px;
+    padding: 12px 20px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 18px;
-    height: 55px;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
 }
 
-.submit-btn:hover {
-    background: #e00057;
+.form-btn {
+    border: 2px;
+    border-right: #757575;
 }
