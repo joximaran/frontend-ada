@@ -77,8 +77,7 @@ header {
   border-radius: 0 0 20px 20px;
   position: relative;
   z-index: 1;
-  font-weight: 300; /* Peso de la fuente más ligero */
-}
+  font-weight: 400; 
 
 /* Efecto de solapa en el botón seleccionado */
 .nav-link.selected::before {
@@ -95,7 +94,7 @@ header {
 
 /* Hover específico para el botón seleccionado */
 .nav-link.selected:hover {
-  font-weight: 400; /* Peso de la fuente un poco más grueso en hover */
+  font-weight: 600; 
   background-color: #545fec;
   color: white;
 }
@@ -134,4 +133,5 @@ header {
   .open-menu-btn {
     display: block;
   }
+}
 }
