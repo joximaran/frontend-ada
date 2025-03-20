@@ -1,7 +1,13 @@
-/* Header */
+/* Márgenes y relleno del body y html */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del header */
 header {
   background-color: #fff;
-  padding: 25px 0;
+  padding: 15px 0;
   box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
   position: fixed;
   top: 0;
@@ -10,6 +16,7 @@ header {
   transition: 0.4s;
 }
 
+/* Contenedor del menú y logo */
 .menu-icon-container {
   display: flex;
   justify-content: space-between; 
@@ -19,6 +26,7 @@ header {
   padding: 0 20px; 
 }
 
+/* Estilos del logo */
 .logo-header {
   flex: 1; 
 }
@@ -31,6 +39,7 @@ header {
   text-transform: uppercase;
 }
 
+/* Estilos del menú de navegación */
 .nav-header {
   display: flex;
   justify-content: flex-end; 
@@ -50,23 +59,40 @@ header {
 .nav-link {
   line-height: 2.5;
   padding: 0 10px;
-  border-radius: 100px;
   text-decoration: none;
   color: #333;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #8338ec;
+  color: #f26aa9;
 }
 
+/* Estilos del botón seleccionado */
 .nav-link.selected {
   color: white;
-  padding: 0 30px;
-  background-color: #8338ec; 
-  border-radius: 100px;
+  padding: 10px 30px;
+  background-color: #f26aa9; 
+  border-radius: 0 0 20px 20px; 
+  position: relative; 
+  z-index: 1; 
+  margin-top: 20px; 
 }
 
+/* Efecto de solapa en el botón seleccionado */
+.nav-link.selected::before {
+  content: "";
+  position: absolute;
+  top: -20px; 
+  left: 0;
+  width: 100%;
+  height: 20px; 
+  background-color: #f26aa9; 
+  border-radius: 20px 20px 0 0; 
+  z-index: -1; 
+}
+
+/* Botón para abrir el menú en móviles */
 .open-menu-btn {
   display: none;
   font-size: 16px;
@@ -85,6 +111,7 @@ header {
   margin-left: 15px;
 }
 
+/* Estilos responsivos */
 @media (max-width: 1100px) {
   header {
     padding: 15px 20px;
