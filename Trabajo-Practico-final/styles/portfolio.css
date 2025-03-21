@@ -1,80 +1,78 @@
-/* portfolio */
-
-.portfolio-filters {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.portfolio-section {
+  padding: 2em 0;
+  background-color: #f9f9f9;
 }
 
-.portfolio-filter {
-  line-height: 2.5;
-  margin: 0.5em 5px;
+.portfolio-section .section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.portfolio-section .section-description {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.1em;
+  line-height: 1.6;
   padding: 0 20px;
-  border-radius: 100px;
-}
-
-.portfolio-filter:not(.selected):hover {
-  color: #8338ec;
-}
-
-.portfolio {
+  text-align: justify;
   width: 100%;
 }
 
-.portfolio {
-  width: calc(100% / 3 - (0.75em * 2));
-  margin: 0.75em;
-  border: 1px solid #e0e0e0;
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5em; 
+  padding: 0 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; 
+  background-color: #fff;
   border-radius: 8px;
-  padding: 20px;
   overflow: hidden;
 }
 
-.portfolio:hover {
-  border: 1px solid #995cef;
-  color: #673ab7;
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
 }
 
-.portfolio.hidden {
-  display: none;
+.portfolio-thumb {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+  display: block;
+  border-radius: 8px 8px 0 0;
 }
 
 .portfolio-name {
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 0.75em;
+  font-size: 1.2em;
+  color: #e91e63;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding-bottom: 5px;
 }
 
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.portfolio-item:hover .portfolio-name {
+  color: #000;
 }
 
 @media (max-width: 900px) {
-  .portfolio-filters {
-    flex-wrap: wrap;
-  }
-
-  .portfolio {
-    width: calc(100% / 2 - (0.75em * 2));
-    margin: 0.75em;
+  .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 550px) {
-  .portfolio-filters {
-    flex-wrap: wrap;
-  }
-  .portfolio-filter {
-    margin: 0.5em 0;
-    font-size: 0.8em;
-    line-height: 2.2;
-    padding: 0 20px;
-  }
-
-  .portfolio {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 1.25em;
+  .portfolio-grid {
+      grid-template-columns: 1fr; 
   }
 }

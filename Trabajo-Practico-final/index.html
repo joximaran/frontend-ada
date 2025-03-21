@@ -1,495 +1,309 @@
+<!DOCTYPE html>
 <html lang="es">
-  
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio personal de Maria Jose Maran" />
-    <title>Maria Jose Maran</title>
-    <link
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio personal de Maria Jose Maran" />
+  <title>Maria Jose Maran</title>
+  <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet"
-    preload
   />
-    <link
-      rel="stylesheet"
-      href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      preload
-    />
-    <link
-      rel="stylesheet"
-      href="../cdn.jsdelivr.net/gh/konpa/devicon%40df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-      preload
-    />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
-    />
-
-    <link rel="stylesheet" href="styles/base.css" preload />
-    <link rel="stylesheet" href="styles/layout.css" preload />
-    <link rel="stylesheet" href="styles/header.css" preload />
-    <link rel="stylesheet" href="styles/footer.css" preload />
-    <link rel="stylesheet" href="styles/about.css" preload />
-    <link rel="stylesheet" href="styles/quote.css" preload />
-    <link rel="stylesheet" href="styles/skills.css" preload />
-    <link rel="stylesheet" href="styles/contact.css" preload />
-    <link rel="stylesheet" href="styles/portfolio.css" preload />
-  </head>
-  <body>
-    
-<!-- Header -->
-<header>
-  <div class="column menu-icon-container">
-    <!-- Logo (tu nombre) -->
-    <div class="logo-header">
-      <span class="logo-text">MARIA JOSE MARAN</span>
-    </div>
-
-    <!-- Menú de navegación -->
-    <nav class="nav-header">
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#about" class="nav-link">INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a href="#skills" class="nav-link">CONOCIMIENTOS</a>
-        </li>
-        <li class="nav-item">
-          <a href="#portfolio" class="nav-link">PORTFOLIO</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link selected">CONTACTO</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Botón para abrir el menú en móviles -->
-    <button
-      type="button"
-      class="open-menu-btn"
-      aria-controls="sidebar-menu"
-      aria-expanded="false"
-    >
-      Menu <i class="fas fa-bars" aria-hidden="true"></i>
-    </button>
-  </div>
-</header>
-
-<!-- Menú lateral (sidebar) -->
-<section class="sidebar-menu" id="sidebar-menu" aria-hidden="true">
-  <button class="close-menu-btn" aria-label="Cerrar Menú" tabindex="-1">
-    <i class="fas fa-times" aria-hidden="true"></i>
-  </button>
-
-    <!-- Sobre mí -->
-    <section class="section about-section" id="about">
-      <div class="column main-content">
-        <div class="about-info">
-          <h1 class="about-name">¡Hola! Soy Maria Jose Maran</h1>
-          <p class="about-description">
-            Tengo + de 15 años de experiencia en diseño y tecnología.
-          </p>
-          <a href="#portfolio" class="button">VISITA MI PORTFOLIO</a>
-        </div>
-        <img src="images/foto-inicio.jpg" alt="" class="about-img" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+  />
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+  />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="stylesheet" href="styles/quote.css" />
+  <link rel="stylesheet" href="styles/skills.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="stylesheet" href="styles/portfolio.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="column menu-icon-container">
+      <!-- Logo (tu nombre) -->
+      <div class="logo-header">
+        <span class="logo-text">MARIA JOSE MARAN</span>
       </div>
-    </section>
-    
 
-    <!-- Conocimientos -->
-    <section class="section skills-section" id="skills">
-      <div class="column content">
-        <h2 class="section-title">Mis conoci<wbr />mientos</h2>
-        <p class="skills-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque
-          neque molestias consequuntur vel ab quas architecto.
-        </p>
-        <div class="grid skills-grid">
-          <div class="skill grid-item">
-            <i class="devicon-html5-plain colored skill-icon"></i>
-            <p class="skill-title">HTML 5</p>
-          </div>
-          <div class="skill grid-item">
-            <i class="devicon-css3-plain colored skill-icon"></i>
-            <p class="skill-title">CSS 3</p>
-          </div>
-          <div class="skill grid-item">
-            <i class="devicon-sass-plain colored skill-icon"></i>
-            <p class="skill-title">Sass</p>
-          </div>
-          <div class="skill grid-item">
-            <i class="devicon-javascript-plain colored skill-icon"></i>
-            <p class="skill-title">JavaScript</p>
-          </div>
-          <div class="skill grid-item">
-            <i class="devicon-react-plain colored skill-icon"></i>
-            <p class="skill-title">React</p>
-          </div>
-          <div class="skill grid-item">
-            <i class="devicon-git-plain colored skill-icon"></i>
-            <p class="skill-title">GIT</p>
-          </div>
-        </div>
-      </div>
-    </section>
-   
-
-    <!-- portfolio -->
-    <section class="section quote-section">
-      <div class="column content">
-        <i class="fas fa-quote-right quote-icon"></i>
-        <blockquote>
-          <p class="quote">
-            Me apasiona crear y descubrir nuevas formas de mejorar la vida de las personas a través del diseño. Cada proyecto es una oportunidad para explorar, innovar y aportar soluciones que impacten positivamente. Mi enfoque se centra en diseñar experiencias visuales y gráficas que no solo sean estéticamente atractivas, sino también funcionales y significativas. Creo firmemente que el diseño es una herramienta poderosa para conectar, inspirar y transformar.
-          </p>
-        </blockquote>
-        <h2 class="quote-author">Someone</h2>
-      </div>
-    </section>
-    <section class="section portfolio-section" id="portfolio">
-      <div class="column content">
-        <h2 class="section-title">Mis portfolio</h2>
-        <p class="section-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
-          nobis voluptatum tenetur! Id, nesciunt?
-        </p>
-        <!-- portfolio cuadricula -->
-        <div class="grid portfolio">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="portfolio"
-            data-language="html-css"
-          >
-            <img
-              src="images/Screen%20Shot%202020-07-12%20at%2014.31.06.png"
-              alt=""
-              class="portfolio-thumb"
-            />
-            <p class="portfolio-name">Portfolio</p>
-          </a>
-
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="portfolio"
-            data-language="javascript"
-          >
-            <img
-              src="images/undraw_mobile_user_7oqo.png"
-              alt=""
-              class="portfolio-thumb"
-            />
-            <p class="portfolio-name">Generador de memes</p>
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="portfolio"
-            data-language="javascript"
-          >
-            <img
-              src="images/undraw_old_day_6x25.png"
-              alt=""
-              class="portfolio-thumb"
-            />
-            <p class="portfolio-name">Match 3</p>
-          </a>
-
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="portfolio"
-            data-language="javascript"
-          >
-            <img
-              src="images/undraw_wallet_aym5.png"
-              alt=""
-              class="portfolio-thumb"
-            />
-            <p class="portfolio-name">Controlador de gastos</p>
-          </a>
-
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="portfolio"
-            data-language="javascript"
-          >
-            <img
-              src="images/undraw_calendar_dutt.png"
-              alt=""
-              class="portfolio-thumb"
-            />
-            <p class="portfolio-name">Administrador de reuniones</p>
-          </a>
-
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="portfolio"
-            data-language="react"
-          >
-            <img
-              src="images/undraw_to_do_list_a49b.png"
-              alt=""
-              class="portfolio-thumb"
-            />
-            <p class="portfolio-name">Todo app</p>
-          </a>
-
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="portfolio"
-            data-language="react"
-          >
-            <img
-              src="images/undraw_movie_night_fldd.png"
-              alt=""
-              class="portfolio-thumb"
-            />
-            <p class="portfolio-name">Buscador de películas</p>
-          </a>
-        </div>
-        
-      </div>
-    </section>
-    
-
-    <!-- Contacto  -->
-    <section class="section contact-section" id="contact">
-      <div class="column">
-        <div class="contact">
-          <section class="contact-column">
-            <h2 class="section-title">Contactame</h2>
-            <p class="section-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
-              nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae
-              quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque
-              numquam eligendi.
-            </p>
-            <!-- links RRSS -->
-            <section aria-label="Links de redes sociales">
-              <ul class="contact-social-links">
-                <li class="contact-social-item">
-                  <a
-                    href="#"
-                    class="contact-social-link twitter-link"
-                    aria-label="Twitter"
-                  >
-                    <i
-                      aria-hidden="true"
-                      class="fab fa-twitter contact-social-icon"
-                    ></i
-                    >@Maria JoseLovelace</a
-                  >
-                </li>
-                <li class="contact-social-item">
-                  <a
-                    href="#"
-                    class="contact-social-link github-link"
-                    aria-label="Github"
-                  >
-                    <i
-                      aria-hidden="true"
-                      class="fab fa-github-alt contact-social-icon"
-                    ></i
-                    >Maria Jose Maran</a
-                  >
-                </li>
-                <li class="contact-social-item">
-                  <a
-                    href="#"
-                    class="contact-social-link linkedin-link"
-                    aria-label="Linkedin"
-                  >
-                    <i
-                      aria-hidden="true"
-                      class="fab fa-linkedin-in contact-social-icon"
-                    ></i
-                    >Maria Jose Maran</a
-                  >
-                </li>
-                <li class="contact-social-item">
-                  <a
-                    href="#"
-                    class="contact-social-link email-link"
-                    aria-label="Email"
-                  >
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-envelope contact-social-icon"
-                    ></i
-                    >mariajosemaran@gmail.com</a
-                  >
-                </li>
-              </ul>
-            </section>
-          </section>
-          <section class="contact-column">
-            <h2 class="section-title">Escribime</h2>
-            <form
-              action="https://submit-form.com/dZv3lZKLnN2eByG6HXaMj"
-              method="POST"
-              class="contact-form"
-            >
-              <div class="input-name-wrapper">
-                <div class="form-control">
-                  <label for="firstname">Nombre *</label>
-                  <input
-                    type="text"
-                    name="Nombre"
-                    id="firtsname"
-                    class="input-firtsname input-control"
-                    placeholder="p. ej.: Maria Jose"
-                    aria-label="Nombre"
-                    required
-                  />
-                  <i
-                    class="far fa-times-circle icon-invalid"
-                    aria-hidden="true"
-                  ></i>
-                  <i
-                    class="far fa-check-circle icon-valid"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-                <div class="form-control">
-                  <label for="lastname">Apellido *</label>
-                  <input
-                    type="text"
-                    name="Apellido"
-                    id="lastname"
-                    class="input-lastname input-control"
-                    placeholder="p. ej.: Lovelace"
-                    aria-label="Apellido"
-                    required
-                  />
-                  <i
-                    class="far fa-times-circle icon-invalid"
-                    aria-hidden="true"
-                  ></i>
-                  <i
-                    class="far fa-check-circle icon-valid"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-              </div>
-              <div class="form-control">
-                <label for="email">Email *</label>
-                <input
-                  type="email"
-                  name="Email"
-                  id="email"
-                  class="input-control"
-                  placeholder="p. ej.: Maria Jose.lovelace@gmail.com"
-                  aria-label="Email"
-                  required
-                />
-                <i
-                  class="far fa-times-circle icon-invalid"
-                  aria-hidden="true"
-                ></i>
-                <i
-                  class="far fa-check-circle icon-valid"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <div class="form-control">
-                <label for="message">Mensaje *</label>
-                <textarea
-                  name="Mensaje"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  class="input-control"
-                  placeholder="Escriba un mensaje aquí"
-                  aria-label="Mensaje"
-                  required
-                ></textarea>
-                <i
-                  class="far fa-times-circle icon-invalid"
-                  aria-hidden="true"
-                ></i>
-                <i
-                  class="far fa-check-circle icon-valid"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <button type="submit" class="contact-send-btn button">
-                Enviar
-              </button>
-            </form>
-          </section>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-      <!-- Navegación footer -->
-      <nav class="footer-nav">
-        <ul class="footer-nav-menu">
-          <li class="footer-nav-item">
-            <a href="#about" class="footer-nav-link">HOLA</a>
+      <!-- Menú de navegación -->
+      <nav class="nav-header">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">INICIO</a>
           </li>
-          <li class="footer-nav-item">
-            <a href="#skills" class="footer-nav-link">CONOCIMIENTOS</a>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">CONOCIMIENTOS</a>
           </li>
-          <li class="footer-nav-item">
-            <a href="#portfolio" class="footer-nav-link">portfolio</a>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">PORTFOLIO</a>
           </li>
-          <li class="footer-nav-item">
-            <a href="#contact" class="footer-nav-link">CONTACTO</a>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link selected">CONTACTO</a>
           </li>
         </ul>
       </nav>
-      <!-- Menu footer -->
-      <ul class="footer-social-links">
-        <li class="footer-social-item">
-          <a
-            href="#"
-            class="footer-social-link twitter-link"
-            aria-label="Twitter"
-          >
-            <i class="fab fa-twitter footer-social-icon"></i
-          ></a>
+
+      <!-- Botón para abrir el menú en móviles -->
+      <button
+        type="button"
+        class="open-menu-btn"
+        aria-controls="sidebar-menu"
+        aria-expanded="false"
+      >
+        Menu <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú lateral (sidebar) -->
+  <section class="sidebar-menu" id="sidebar-menu" aria-hidden="true">
+    <button class="close-menu-btn" aria-label="Cerrar Menú" tabindex="-1">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="section about-section" id="about">
+    <div class="column main-content">
+      <div class="about-info">
+        <h1 class="about-name">¡Hola! Soy Maria Jose Maran</h1>
+        <p class="about-description">
+          Tengo + de 15 años de experiencia en diseño y tecnología.
+        </p>
+        <a href="#portfolio" class="button">VISITA MI PORTFOLIO</a>
+      </div>
+      <img src="images/foto-inicio.jpg" alt="" class="about-img" />
+    </div>
+  </section>
+
+  <!-- Conocimientos -->
+  <section class="section skills-section" id="skills">
+    <div class="column content">
+      <h2 class="section-title">Mis conoci<wbr />mientos</h2>
+      <p class="skills-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque
+        neque molestias consequuntur vel ab quas architecto.
+      </p>
+      <div class="grid skills-grid">
+        <div class="skill grid-item">
+          <i class="devicon-html5-plain colored skill-icon"></i>
+          <p class="skill-title">HTML 5</p>
+        </div>
+        <div class="skill grid-item">
+          <i class="devicon-css3-plain colored skill-icon"></i>
+          <p class="skill-title">CSS 3</p>
+        </div>
+        <div class="skill grid-item">
+          <i class="devicon-sass-plain colored skill-icon"></i>
+          <p class="skill-title">Sass</p>
+        </div>
+        <div class="skill grid-item">
+          <i class="devicon-javascript-plain colored skill-icon"></i>
+          <p class="skill-title">JavaScript</p>
+        </div>
+        <div class="skill grid-item">
+          <i class="devicon-react-plain colored skill-icon"></i>
+          <p class="skill-title">React</p>
+        </div>
+        <div class="skill grid-item">
+          <i class="devicon-git-plain colored skill-icon"></i>
+          <p class="skill-title">GIT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Portfolio -->
+  <section class="portfolio-section" id="portfolio">
+  <h2 class="section-title">Mis proyectos</h2>
+  <p class="section-description">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
+    nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae
+    quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque
+    numquam eligendi.
+  </p>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <img src="images/portfolio1.jpg" alt="" class="portfolio-thumb" />
+      <p class="portfolio-name">Portfolio</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="images/portfolio2.jpg" alt="" class="portfolio-thumb" />
+      <p class="portfolio-name">Generador de memes</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="images/portfolio3.jpg" alt="" class="portfolio-thumb" />
+      <p class="portfolio-name">Match 3</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="images/portfolio4.jpg" alt="" class="portfolio-thumb" />
+      <p class="portfolio-name">Controlador de gastos</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contacto -->
+  <section class="section contact-section" id="contact">
+    <div class="column">
+      <div class="contact">
+        <section class="contact-column">
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-description">
+            Siempre estoy abierta a nuevos proyectos y conversaciones para aprender, mejorar y colaborar
+          </p>
+          <!-- Links RRSS -->
+          <section aria-label="Links de redes sociales">
+            <ul class="contact-social-links">
+              <li class="contact-social-item">
+                <a href="#" class="contact-social-link twitter-link" aria-label="Twitter">
+                  <i class="fab fa-twitter contact-social-icon"></i>@Maria JoseLovelace
+                </a>
+              </li>
+              <li class="contact-social-item">
+                <a href="#" class="contact-social-link github-link" aria-label="Github">
+                  <i class="fab fa-github-alt contact-social-icon"></i>Maria Jose Maran
+                </a>
+              </li>
+              <li class="contact-social-item">
+                <a href="#" class="contact-social-link linkedin-link" aria-label="Linkedin">
+                  <i class="fab fa-linkedin-in contact-social-icon"></i>Maria Jose Maran
+                </a>
+              </li>
+              <li class="contact-social-item">
+                <a href="#" class="contact-social-link email-link" aria-label="Email">
+                  <i class="fas fa-envelope contact-social-icon"></i>mariajosemaran@gmail.com
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section class="contact-column">
+          <h2 class="section-title">Escribime</h2>
+          <form action="https://submit-form.com/dZv3lZKLnN2eByG6HXaMj" method="POST" class="contact-form">
+            <div class="input-name-wrapper">
+              <div class="form-control">
+                <label for="firstname">Nombre *</label>
+                <input
+                  type="text"
+                  name="Nombre"
+                  id="firtsname"
+                  class="input-firtsname input-control"
+                  placeholder="p. ej.: Maria Jose"
+                  aria-label="Nombre"
+                  required
+                />
+                <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
+                <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+              </div>
+              <div class="form-control">
+                <label for="lastname">Apellido *</label>
+                <input
+                  type="text"
+                  name="Apellido"
+                  id="lastname"
+                  class="input-lastname input-control"
+                  placeholder="p. ej.: Lovelace"
+                  aria-label="Apellido"
+                  required
+                />
+                <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
+                <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                class="input-control"
+                placeholder="p. ej.: Maria Jose.lovelace@gmail.com"
+                aria-label="Email"
+                required
+              />
+              <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
+              <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+            </div>
+            <div class="form-control">
+              <label for="message">Mensaje *</label>
+              <textarea
+                name="Mensaje"
+                id="message"
+                cols="30"
+                rows="10"
+                class="input-control"
+                placeholder="Escriba un mensaje aquí"
+                aria-label="Mensaje"
+                required
+              ></textarea>
+              <i class="far fa-times-circle icon-invalid" aria-hidden="true"></i>
+              <i class="far fa-check-circle icon-valid" aria-hidden="true"></i>
+            </div>
+            <button type="submit" class="contact-send-btn button">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Navegación footer -->
+    <nav class="footer-nav">
+      <ul class="footer-nav-menu">
+        <li class="footer-nav-item">
+          <a href="#about" class="footer-nav-link">HOLA</a>
         </li>
-        <li class="footer-social-item">
-          <a href="#" class="footer-social-link github-link" aria-label="Github">
-            <i class="fab fa-github-alt footer-social-icon"></i
-          ></a>
+        <li class="footer-nav-item">
+          <a href="#skills" class="footer-nav-link">CONOCIMIENTOS</a>
         </li>
-        <li class="footer-social-item">
-          <a
-            href="#"
-            class="footer-social-link linkedin-link"
-            aria-label="Linkedin"
-          >
-            <i class="fab fa-linkedin-in footer-social-icon"></i
-          ></a>
+        <li class="footer-nav-item">
+          <a href="#portfolio" class="footer-nav-link">portfolio</a>
         </li>
-        <li class="footer-social-item">
-          <a href="#" class="footer-social-link email-link" aria-label="Email">
-            <i class="fas fa-envelope footer-social-icon"></i
-          ></a>
+        <li class="footer-nav-item">
+          <a href="#contact" class="footer-nav-link">CONTACTO</a>
         </li>
       </ul>
-      Hecho con ❤️ por Maria Jose Maran en el curso de Frontend de Ada
-    </footer>
-  </body>
-
+    </nav>
+    <!-- Menu footer -->
+    <ul class="footer-social-links">
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link twitter-link" aria-label="Twitter">
+          <i class="fab fa-twitter footer-social-icon"></i>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link github-link" aria-label="Github">
+          <i class="fab fa-github-alt footer-social-icon"></i>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link linkedin-link" aria-label="Linkedin">
+          <i class="fab fa-linkedin-in footer-social-icon"></i>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link email-link" aria-label="Email">
+          <i class="fas fa-envelope footer-social-icon"></i>
+        </a>
+      </li>
+    </ul>
+    Hecho con ❤️ por Maria Jose Maran en el curso de Frontend de Ada
+  </footer>
+</body>
 </html>
-
-
-
-
