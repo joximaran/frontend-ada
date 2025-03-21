@@ -1,27 +1,27 @@
-/* Projects */
+/* portfolio */
 
-.project-filters {
+.portfolio-filters {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.project-filter {
+.portfolio-filter {
   line-height: 2.5;
   margin: 0.5em 5px;
   padding: 0 20px;
   border-radius: 100px;
 }
 
-.project-filter:not(.selected):hover {
+.portfolio-filter:not(.selected):hover {
   color: #8338ec;
 }
 
-.projects {
+.portfolio {
   width: 100%;
 }
 
-.project {
+.portfolio {
   width: calc(100% / 3 - (0.75em * 2));
   margin: 0.75em;
   border: 1px solid #e0e0e0;
@@ -30,49 +30,49 @@
   overflow: hidden;
 }
 
-.project:hover {
+.portfolio:hover {
   border: 1px solid #995cef;
   color: #673ab7;
 }
 
-.project.hidden {
+.portfolio.hidden {
   display: none;
 }
 
-.project-name {
+.portfolio-name {
   font-weight: 600;
   margin-top: 20px;
 }
 
-.project {
+.portfolio {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 @media (max-width: 900px) {
-  .project-filters {
+  .portfolio-filters {
     flex-wrap: wrap;
   }
 
-  .project {
+  .portfolio {
     width: calc(100% / 2 - (0.75em * 2));
     margin: 0.75em;
   }
 }
 
 @media (max-width: 550px) {
-  .project-filters {
+  .portfolio-filters {
     flex-wrap: wrap;
   }
-  .project-filter {
+  .portfolio-filter {
     margin: 0.5em 0;
     font-size: 0.8em;
     line-height: 2.2;
     padding: 0 20px;
   }
 
-  .project {
+  .portfolio {
     width: 100%;
     margin: 0;
     margin-bottom: 1.25em;
