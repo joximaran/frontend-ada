@@ -31,19 +31,19 @@ form legend {
 h1,
 .text--xxl {
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h2,
 .text--xl {
   font-size: 45px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h3,
 .text--lg {
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .text--sm,

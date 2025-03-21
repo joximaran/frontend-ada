@@ -1,8 +1,11 @@
 /* Contact */
-
 .contact-section {
   background-color: #f6f7fb;
-  padding-top: 200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0;
 }
 
 .contact {
@@ -10,13 +13,17 @@
   text-align: left;
   background-color: #ffffff;
   padding: 80px 60px;
-  border-radius: 15px;
+  border-radius: 20px;
   border: 1px solid #e0e0e0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .contact .section-title {
   margin-top: 0;
   margin-bottom: 30px;
+  color: #f26aa9; /* Color rosa para el título */
 }
 
 .contact-column {
@@ -42,11 +49,11 @@
 }
 
 .contact-social-link:hover {
-  color: #8338ec;
+  color: #f26aa9; /* Color rosa al hacer hover */
 }
 
 .contact-social-link:hover .contact-social-icon {
-  background-color: #8338ec;
+  background-color: #f26aa9; /* Color rosa */
   color: #fff;
 }
 
@@ -55,6 +62,7 @@
   align-items: center;
   padding: 5px 10px;
   border-radius: 100px;
+  color: #2e2e31; /* Color de texto predeterminado */
 }
 
 .contact-social-icon {
@@ -62,7 +70,7 @@
   width: 2.2rem;
   height: 2.2rem;
   background-color: #fff;
-  color: #8338ec;
+  color: #f26aa9; /* Color rosa */
   border-radius: 50%;
   font-size: 1.2rem;
   line-height: 2.2rem;
@@ -94,26 +102,27 @@ label {
   display: block;
   font-weight: 600;
   margin-top: 5px;
+  color: #2e2e31; /* Color de texto predeterminado */
 }
 
 input:valid:focus,
 textarea:valid:focus {
-  box-shadow: 0px 0px 5px #88c459;
+  box-shadow: 0px 0px 5px #f26aa9; /* Color rosa */
 }
 
 input:invalid:not(:placeholder-shown):focus,
 textarea:invalid:not(:placeholder-shown):focus {
-  box-shadow: 0px 0px 5px #f5414f;
+  box-shadow: 0px 0px 5px #f26aa9; /* Color rosa */
 }
 
 input:invalid:not(:placeholder-shown),
 textarea:invalid:not(:placeholder-shown) {
-  border: 1px solid #f5414f;
+  border: 1px solid #f26aa9; /* Color rosa */
 }
 
 input:valid,
 textarea:valid {
-  border: 1px solid #88c459;
+  border: 1px solid #f26aa9; /* Color rosa */
 }
 
 .icon-invalid,
@@ -126,11 +135,11 @@ textarea:valid {
 }
 
 .icon-valid {
-  color: #88c459;
+  color: #f26aa9; /* Color rosa */
 }
 
 .icon-invalid {
-  color: #f5414f;
+  color: #f26aa9; /* Color rosa */
 }
 
 input:valid ~ .icon-valid,
