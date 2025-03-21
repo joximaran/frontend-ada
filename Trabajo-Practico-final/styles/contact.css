@@ -1,6 +1,6 @@
-/* Contact */
+/* Contacto */
 .contact-section {
-  background-color: #f6f7fb;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -13,8 +13,6 @@
   text-align: left;
   background-color: #ffffff;
   padding: 80px 60px;
-  border-radius: 20px;
-  border: 1px solid #e0e0e0;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -23,60 +21,68 @@
 .contact .section-title {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #f26aa9; /* Color rosa para el título */
+  color: #f26aa9;
 }
 
 .contact-column {
   width: 50%;
 }
 
-.contact-column:first-of-type {
-  padding-right: 20px;
+.contact-info {
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-column:last-of-type {
+.contact-text {
+  margin-bottom: 20px;
+}
+
+.contact-form-column {
   padding-left: 20px;
 }
 
+.social-links-section {
+  margin-top: auto;
+}
+
 .contact-social-links {
-  margin-top: 40px;
-  transition: 0.2s;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0 0 -10px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0;
 }
 
 .contact-social-item {
-  display: flex;
-  margin: 5px 0;
-}
-
-.contact-social-link:hover {
-  color: #f26aa9; /* Color rosa al hacer hover */
-}
-
-.contact-social-link:hover .contact-social-icon {
-  background-color: #f26aa9; /* Color rosa */
-  color: #fff;
+  margin: 0;
 }
 
 .contact-social-link {
   display: flex;
   align-items: center;
-  padding: 5px 10px;
-  border-radius: 100px;
-  color: #2e2e31; /* Color de texto predeterminado */
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-social-link:hover {
+  background-color: transparent;
+  transform: translateY(-5px);
 }
 
 .contact-social-icon {
-  display: block;
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: #fff;
-  color: #f26aa9; /* Color rosa */
-  border-radius: 50%;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
-  margin-right: 10px;
-  text-align: center;
-  transition: 0.2s;
+  font-size: 1.5rem;
+  color: #f26aa9;
+  transition: color 0.3s ease;
+}
+
+.contact-social-link:hover .contact-social-icon {
+  color: #f26aa9;
 }
 
 .input-name-wrapper {
@@ -102,27 +108,27 @@ label {
   display: block;
   font-weight: 600;
   margin-top: 5px;
-  color: #2e2e31; /* Color de texto predeterminado */
+  color: #2e2e31;
 }
 
 input:valid:focus,
 textarea:valid:focus {
-  box-shadow: 0px 0px 5px #f26aa9; /* Color rosa */
+  box-shadow: 0px 0px 5px #f26aa9;
 }
 
 input:invalid:not(:placeholder-shown):focus,
 textarea:invalid:not(:placeholder-shown):focus {
-  box-shadow: 0px 0px 5px #f26aa9; /* Color rosa */
+  box-shadow: 0px 0px 5px #f26aa9;
 }
 
 input:invalid:not(:placeholder-shown),
 textarea:invalid:not(:placeholder-shown) {
-  border: 1px solid #f26aa9; /* Color rosa */
+  border: 1px solid #f26aa9;
 }
 
 input:valid,
 textarea:valid {
-  border: 1px solid #f26aa9; /* Color rosa */
+  border: 1px solid #f26aa9;
 }
 
 .icon-invalid,
@@ -135,11 +141,11 @@ textarea:valid {
 }
 
 .icon-valid {
-  color: #f26aa9; /* Color rosa */
+  color: #f26aa9;
 }
 
 .icon-invalid {
-  color: #f26aa9; /* Color rosa */
+  color: #f26aa9;
 }
 
 input:valid ~ .icon-valid,
@@ -151,61 +157,56 @@ textarea:not(:placeholder-shown):invalid ~ .icon-invalid {
 
 @media (max-width: 900px) {
   .contact-section {
-    flex-direction: column;
-    padding: 0;
-    background-color: transparent;
+      flex-direction: column;
+      padding: 0;
+      background-color: transparent;
   }
 
   .contact {
-    flex-direction: column;
-    padding: 0 40px 120px;
-    border: 0;
+      flex-direction: column;
+      padding: 0 40px 120px;
+      border: 0;
   }
 
   .contact-column {
-    width: 100%;
-    margin-bottom: 40px;
+      width: 100%;
+      margin-bottom: 40px;
   }
 
-  .contact-column:last-child {
-    padding-left: 0;
-    margin-bottom: 60px;
+  .contact-form-column {
+      padding-left: 0;
+      margin-bottom: 60px;
   }
 
   .contact-social-links {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .contact-social-item {
-    width: 50%;
+      justify-content: flex-start;
   }
 }
 
 @media (max-width: 500px) {
   .contact {
-    padding: 20px;
+      padding: 20px;
   }
 
   .contact-social-item {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 10px;
+      width: auto;
+      margin: 0;
+      margin-bottom: 10px;
   }
 
   .input-name-wrapper {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .input-lastname {
-    margin-left: 0;
+      margin-left: 0;
   }
 
   .input-name-wrapper .form-control:nth-of-type(1) {
-    margin-right: 0;
+      margin-right: 0;
   }
 
   .input-name-wrapper .form-control:nth-of-type(2) {
-    margin-left: 0;
+      margin-left: 0;
   }
 }

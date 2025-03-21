@@ -3,9 +3,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 20px 60px;
-  background-color: #8338ec;
-  color: white;
+  padding: 60px 20px 40px; /* Reduje el padding superior y el inferior */
+  background-color: #fce4ec; /* Un rosa claro y suave */
+  color: #333; /* Cambié el color del texto a un gris oscuro */
+  font-size: 14px;
 }
 
 .footer-nav-menu {
@@ -14,55 +15,65 @@ footer {
 }
 
 .footer-nav-item {
-  margin: 0 10px;
+  margin: 0 15px; /* Aumenté el margen para separar los enlaces */
 }
 
 .footer-nav-link {
   font-size: 14px;
-  color: white;
+  color: #f26aa9; /* Un rosa más intenso para los enlaces */
+  text-decoration: none; /* Quitamos el subrayado por defecto */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.footer-nav-link:hover {
+  color: #e91e63; /* Un rosa más oscuro al pasar el ratón */
 }
 
 .footer-social-link:focus,
 .footer-nav-link:focus {
-  box-shadow: 0px 0px 8px #fff;
+  outline: none; /* Quitamos el outline por defecto */
+  box-shadow: 0 0 5px #f26aa9; /* Un sutil box-shadow al hacer focus */
 }
 
 .footer-social-links {
   display: flex;
-  margin: 30px 0;
+  margin: 20px 0; /* Reduje el margen superior */
 }
 
 .footer-social-link {
   border-radius: 50%;
-  width: 2.7rem;
-  margin: 10px;
+  width: 40px; /* Ajuste el tamaño de los iconos */
+  height: 40px;
+  margin: 0 10px; /* Ajuste el margen de los iconos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social-icon {
-  display: block;
-  width: 2.7rem;
-  height: 2.7rem;
-  background-color: white;
-  color: #8338ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Ajuste el tamaño de los iconos */
+  height: 40px;
+  background-color: #fff; /* Blanco para el fondo de los iconos */
+  color: #f26aa9; /* Rosa para los iconos */
   border-radius: 50%;
   font-size: 1.2rem;
-  line-height: 2.7rem;
-  text-align: center;
-  transition: 0.1s;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
 }
 
 .footer-social-link:focus .footer-social-icon,
 .footer-social-link:hover .footer-social-icon {
   color: #fff;
-  background-color: #8338ec;
-  border: 1px solid #fff;
+  background-color: #f26aa9; /* Rosa al pasar el ratón */
 }
 
 @media (max-width: 700px) {
   .footer-nav-menu {
-    display: none;
+      display: none;
   }
   .footer-social-links {
-    margin-top: 0;
+      margin-top: 10px; /* Ajuste el margen superior */
   }
 }
